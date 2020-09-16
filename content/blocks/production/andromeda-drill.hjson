@@ -3,7 +3,7 @@ description: A Powerful Drill made from Amethyst
 type: Drill
 size: 3
 tier: 10
-drillTime: 0.1
+drillTime: 0.01
 drawRim: true
 heatColor: E47AFF
 requirements: [

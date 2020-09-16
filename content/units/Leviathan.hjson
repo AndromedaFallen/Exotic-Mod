@@ -10,7 +10,7 @@ hitsize: 20
 rotatespeed: 0.5
 health: 20000
 weapon: {
-  name: nom
+  name: Cannon
   length: 4
   recoil: 5
   shake: 10

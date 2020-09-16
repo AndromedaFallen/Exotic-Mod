@@ -10,7 +10,7 @@ consumes: {
   power: 1.75
   items: {
     items: [
-      amethyst/3
+      amethyst-gem/3
     ]
   }
   liquid: {
