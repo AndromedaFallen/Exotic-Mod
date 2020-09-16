@@ -1,0 +1,37 @@
+type: MechUnit
+name: Leviathan
+description: Fleet Carrier
+maxVelocity: 1
+speed: 0.75
+drag: 0.5
+range: 20
+mass: 10000
+hitsize: 20
+rotatespeed: 0.5
+health: 20000
+weapon: {
+  name: nom
+  length: 4
+  recoil: 5
+  shake: 10
+  inaccuracy: 25
+  shots: 2
+  spacing: 5
+  shotDelay: 0.5
+  shootSound: shootBig
+  ejectEffect: shellEjectBig
+  width: 4
+  reload: 5
+  alternate: true
+  bullet: {
+    damage: 55
+    speed: 25
+    knockback: 115
+    bulletWidth: 15
+    bulletHeight: 30
+    splashDamageRadius: 10
+    splashDamage: 100
+    shootEffect: shootBig
+    lifetime: 12
+  }
+}
