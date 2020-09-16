@@ -14,12 +14,12 @@ reload: 480
 shootSound: quazar
 activeSound: cosmos
 activeSoundVolume: 2
-powerUse: 1500
-rotatespeed: 0.5
+powerUse: 6000
+rotatespeed: 1
 shootCone: 10
 shootShake: 1.5
-shots: 5
-spread: 10
+shots: 10
+spread: 5
 targetAir: true
 targetGround: true
 heatColor: f152ff
