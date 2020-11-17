@@ -1,0 +1,18 @@
+type: UnitFactory
+name: Mod Factory
+description: Testing mod factory for exotic.
+size: 1
+buildVisibility: sandboxOnly
+consumes: {
+  power: 0.1
+}
+plans: [
+  {
+    unit: hellfire
+    time: 15
+    requirements: [
+      bluewolframite/1
+    ]
+  }
+]
+category: units

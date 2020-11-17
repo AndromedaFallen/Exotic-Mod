@@ -1,47 +1,209 @@
-type: Unit
+type: UnitEntity
 name: Hellfire
-description:
-  '''
-  The most powerful ship ever to fly in an atmosphere. Can take down the most advanced bases if not prepared for. Can pick up the largest of cargoes.
-
-  WARNING: THIS SHIP IS EXTREMELY DANGEROUS. LAUNCHING BEFORE AN ATTACK FROM THE HELLFIRE IS STRONGLY SUGGESTED.
-  '''
-maxVelocity: 1
-speed: 0.1
-drag: 0.5
+description: A massive starship, capable of easily destroying the most powerful units and laying waste to any base in its path. Avoid encounters if possible.
+speed: 0.25
+accel: 0.5
+flying: true
 range: 240
-attackLength: 280
-mass: 10000
-hitsize: 45
-health: 250000000
-retreatPercent: 2
+hitSize: 288
+health: 255006800
+armor: 64055
+lowAltitude: true
+rotateSpeed: 0.1
 engineOffset: 36
 engineSize: 7
-weapon: {
+weapons: [
+  {
   name: wolfsteeth
   rotate: true 
   rotateSpeed: 0.25
+  mirror: false
   x: 0
-  y: 30
+  y: 40
   reload: 60
-  recoil: 0.1
+  xRand: 20
+  recoil: 4
   inaccuracy: 0
   shots: 4
-  shotDelay: 30
+  shotDelay: 5
   shootSound: shootBig
-  ejectEffect: shellEjectBig
+  ejectEffect: casing3
   bullet: {
     sprite: exotic-mod-railbolt
     damage: 100000
-    frontColor: 234dad
-    backColor: 0a2666
+    shootEffect: lancerLaserShoot
+    frontColor: ffffff
+    backColor: 87a3ff
     speed: 16
     knockback: 1500
     width: 16
     height: 50
-    splashDamageRadius: 100
-    splashDamage: 25000
+    pierceBuilding: true
     shootEffect: shootBig
     lifetime: 200
+    }
+  }
+  {
+    name: wolfsteeth
+  rotate: true 
+  rotateSpeed: 0.25
+  mirror: false
+  x: 0
+  y: -120
+  reload: 60
+  xRand: 20
+  recoil: 4 
+  inaccuracy: 0
+  shots: 4
+  shotDelay: 5
+  shootSound: shootBig
+  ejectEffect: casing3
+  bullet: {
+    sprite: exotic-mod-railbolt
+    damage: 100000
+    shootEffect: lancerLaserShoot
+    frontColor: ffffff
+    backColor: 87a3ff
+    speed: 16
+    knockback: 1500
+    width: 16
+    height: 50
+    pierceBuilding: true
+    shootEffect: shootBig
+    lifetime: 200
+    }
+  }
+  {
+  name: hellfire-cannon-main
+  x: 0
+  y: 175
+  rotate: false
+  reload:  360
+  shootCone: 15
+  mirror: false
+  continuous: true
+  shootSound: laserbig
+  
+  recoil: 0
+  shotDelay: 60
+  bullet: {
+    type: ContinuousLaserBulletType
+    length: 315
+    activeSound: beam
+    lifetime: 300
+    drawSize: 460
+    shootEffect: railShoot
+    shake: 15
+    width: 8
+    damage: 345980
+    colors: [87a3ff, abbeff, cfdaff, ffffff]
+    }
+  }
+  {
+  name: point-defense-cluster
+  x: 35
+  y: 90
+  shots: 35
+  rotate: true
+  reload: 5
+  inaccuracy: 45
+  bullet: {
+    damage: 55650
+    speed: 15
+    lifetime: 7
+    pierce: true
+    pierceBuilding: true
+    height: 10
+    width: 3
+    frontColor: ffffff
+    backColor: 87a3ff
+    }
+  }
+  {
+  name: point-defense-cluster
+  x: 35
+  y: -175
+  shots: 35
+  rotate: true
+  reload: 5
+  inaccuracy: 45
+  bullet: {
+    damage: 55650
+    speed: 15
+    lifetime: 7
+    pierce: true
+    pierceBuilding: true
+    height: 10
+    width: 3
+    frontColor: ffffff
+    backColor: 87a3ff
+    }
+  }
+  {
+  name: hellfire-frontal-cannon
+  x: 0
+  y: 155
+  shots: 3
+  xRand: 25
+  burstSpacing: 1
+  inaccuracy: 1
+  mirror: false
+  shootSound: shootBig
+  reload: 10
+  bullet: {
+    damage: 522530
+    lifetime: 60
+    speed: 14
+    height: 55
+    width: 22
+    frontColor: ffffff
+    backColor: 87a3ff
   }
 }
+{
+name: broadside-cannon
+x: 35
+y: -15
+rotate: true
+reload: 15
+shots: 25
+inaccuracy: 35
+shootSound: shootBig
+bullet: {
+  damage: 676550
+  speed: 14
+  lifetime: 15
+  pierce: true
+  pierceBuilding: true
+  height: 28
+  width: 18
+  homingPower: 5.0
+  homingRange: 32
+  frontColor: ffffff
+  backColor: 87a3ff
+  }
+}
+{
+  name: broadside-cannon
+  x: 35 
+  y: -72
+  rotate: true
+  reload: 15
+  shots: 25
+  inaccuracy: 35
+  shootSound: shootBig
+  bullet: {
+    damage: 676550
+    speed: 14
+    lifetime: 15
+    pierce: true
+    pierceBuilding: true
+    height: 28
+    width: 18
+    homingPower: 5.0
+    homingRange: 32
+    frontColor: ffffff
+    backColor: 87a3ff
+    }
+  }
+]
