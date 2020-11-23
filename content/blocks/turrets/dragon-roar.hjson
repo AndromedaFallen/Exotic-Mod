@@ -107,21 +107,68 @@ sand: {
     fragBullets: 10
     fragBullet: {
       bulletSprite: exotic-mod-dragonbolt
-      type: LiquidBulletType
-      liquid: mag-slag
+      type: MissileBulletType
       trailColor: c93a3a
+      damage: 290
       speed: 8
       bulletWidth: 8
       bulletHeight: 8
       bulletShrink: 1
       lifetime:10
-      effect: burning
       armorMultiplier: 0.1
-      incendChance: 1
-      incendSpread: 16
-      incendAmount: 64
       }
    }
+amethyst-gem: {
+    damage: 143568
+    speed: 10
+    lifetime: 120
+    reloadMultiplier: 0.5
+    ammoMultiplier: 1
+    sprite: exotic-mod-dragonbolt
+    pierce: true
+    pierceBuilding: true
+    frontColor: C93A3A
+    backColor: 590707
+    trailColor: C93A3A
+    bulletWidth: 24
+    bulletHeight: 24
+    bulletShrink: 0
+    homingRange: 480
+    homingPower: 90
+    fragBullets: 10
+    fragBullet: {
+    type: LaserBulletType
+    damage: 12569
+    lifetime: 120
+    }
+ }
+bluewolframite: {
+    damage: 164550
+    speed: 10
+    lifetime: 120
+    reloadMultiplier: 0.25
+    ammoMultiplier: 1
+    sprite: exotic-mod-dragonbolt
+    pierce: true
+    pierceBuilding: true
+    frontColor: C93A3A
+    backColor: 590707
+    trailColor: C93A3A
+    bulletWidth: 24
+    bulletHeight: 24
+    bulletShrink: 0
+    homingRange: 480
+    homingPower: 90
+    lightning: 10
+    lightningLength: 7
+    lightningColor: 87a3ff
+    fragBullets: 25
+    fragBullet: {
+      type: LightningBulletType
+      damage: 150987
+      lightningLength: 20
+    }
+  }
 draconium: {
     bulletSprite: exotic-mod-dragonbolt
     type: MissileBulletType
@@ -141,27 +188,28 @@ draconium: {
     homingPower: 90
     ammoMultiplier: 5
     hitShake: 1
+    pierce: true
+    pierceBuilding: true
     frontColor: C93A3A
     backColor: 590707
-    fragBullets: 10
+    fragBullets: 100
     fragBullet: {
       bulletSprite: exotic-mod-dragonbolt
-      lifetime: 600
-      damage: 93000
-      splashDamage: 9000
-      splashDamageRadius: 200
-      type: MissileBulletType
-      trailColor: C93A3A
+      type: LiquidBulletType
+      liquid: mag-slag
+      damage: 24000
+      trailColor: c93a3a
       speed: 8
       bulletWidth: 8
       bulletHeight: 8
-      bulletShrink: 0
-      homingPower: 90
-      homingRange: 90
-      hitShake: 0.5
-      frontColor: C93A3A
-      backColor: 590707
-    }
+      bulletShrink: 1
+      lifetime: 0
+      effect: burning
+      armorMultiplier: 0.1
+      incendChance: 1
+      incendSpread: 16
+      incendAmount: 64
+      }
   }
 }
 requirements: [
