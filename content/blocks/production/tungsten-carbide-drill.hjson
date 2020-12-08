@@ -7,7 +7,7 @@ drilltime: 10
 drawRim: true
 heatColor: 0C0C42
 requirements: [
-  bluewolframite/100
+  tungsten-ingot/100
   thorium/25
   surge-alloy/30
   graphite/150
