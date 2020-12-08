@@ -1,0 +1,18 @@
+name: Tungsten Carbide Drill
+description: A drill with a hardened tip, used for mining the hardest materials.
+type: drill
+size: 4
+tier: 11
+drilltime: 10
+drawRim: true
+heatColor: 0C0C42
+requirements: [
+  bluewolframite/100
+  thorium/25
+  surge-alloy/30
+  graphite/150
+]
+category: production
+idleSound: build
+idleSoundVolume: 0.05
+research: andromeda-drill
